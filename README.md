@@ -3,6 +3,9 @@ YamlConfigServiceProvider
 
 Service provider for Silex for using YAML configuration files. This provider based on a fork of Alexander Kluth <contact@alexanderkluth.com> yaml-config service provider available on [Github](https://github.com/deralex/YamlConfigServiceProvider) including minor improvements and changes to run up the latest version of php(7).      
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/dunkelfrosch/silex-yaml-config-provider.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-yaml-config-provider)
+
 Installation
 --------------
 
