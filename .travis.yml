@@ -1,11 +1,28 @@
 language: php
 
 php:
-    - 5.4
-    - 5.5
-    - 5.6
-    - 7
+  - 5.5
+  - 5.6
+  - 7
 
-before_script:
-    - curl -s http://getcomposer.org/installer | php
-    - php composer.phar install --dev
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+sudo: false
+
+before_install:
+  - composer selfupdate
+
+install:
+  - composer update --prefer-dist --no-interaction
+
+script:
+  - cd ./bin/scripts \
+    && ./travis_phpunit.sh \
+    && cd ../../
+
+notifications:
+  email:
+    - patrick.paechnatz@gmail.com
+    - dunkelfrosch.net@gmail.com
