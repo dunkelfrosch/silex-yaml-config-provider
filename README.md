@@ -13,7 +13,7 @@ To use it add following line to your composer.json:
 
     "require": {
         ...
-        "df/yaml-config-provider": "^1.0"
+        "df/silex-yaml-config-provider": "dev-master"
         ...
     }
 
@@ -22,7 +22,7 @@ Usage
 --------------
 Include following line of code somewhere in your initial Silex file (index.php or whatever):
 
-    $app->register(new DF\Silex\YamlConfigServiceProvider(PATH_TO_CONFIG));
+    $app->register(new DF\Silex\Provider\YamlConfigServiceProvider(PATH_TO_CONFIG));
 
 Now you have access to all of your configuration variables through `$app['config']`.
 
@@ -45,7 +45,7 @@ index.php:
         $app = new Silex\Application();
 
         // Considering the config.yml files is in the same directory as index.php
-        $app->register(new DF\Silex\YamlConfigServiceProvider('config.yml'));
+        $app->register(new DF\Silex\Provider\YamlConfigServiceProvider('config.yml'));
 
         echo $app['config']['database']['host'];
         ...
