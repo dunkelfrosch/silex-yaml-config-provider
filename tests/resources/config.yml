@@ -1,0 +1,21 @@
+#
+# just a pseudo config yaml file for our unit tests
+#
+
+database:
+    host: localhost
+    port: 12345
+    user: myTestUser
+    password: myTestPassword
+
+strings:
+    simple_no_quotes: my string content 1
+    single_quote_string: 'my string content 2'
+    double_quote_string: "my string content 3"
+    double_quote_string_with_newline: "a double-quoted string in my YAML\n"
+
+arrays:
+    simple_single_dim_array:
+        - php
+        - perl
+        - python

@@ -1,0 +1,6 @@
+# composer related build/resource directories
+vendor/*
+bin/
+
+# IDE
+.idea/

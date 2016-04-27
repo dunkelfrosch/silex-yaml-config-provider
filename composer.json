@@ -1,0 +1,30 @@
+{
+    "name": "df/silex-yaml-config-provider",
+    "description": "Just another Silex ServiceProvider for using YAML configuration files",
+    "keywords": ["silex"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Paechnatz",
+            "email": "patrick.paechnatz@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "silex/silex": "2.0.x-dev",
+        "symfony/yaml": "~2.4",
+        "pimple/pimple": "~3.0"
+    },
+    "require-dev": {
+        "symfony/yaml": "~2.4",
+        "phpunit/phpunit": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "DF\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
